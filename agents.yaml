@@ -1,0 +1,25 @@
+agents:
+  - id: "agent_1"
+    name: "Regulatory Analyst"
+    description: "Analyzes regulatory documents for compliance."
+    model: "gemini-2.5-flash"
+    max_tokens: 8000
+    temperature: 0.2
+    system_prompt: "You are a regulatory analyst. Analyze the provided document for compliance with FDA guidelines."
+    provider: "gemini"
+  - id: "agent_2"
+    name: "Risk Assessor"
+    description: "Identifies and assesses risks in medical device submissions."
+    model: "gemini-3-flash-preview"
+    max_tokens: 8000
+    temperature: 0.3
+    system_prompt: "You are a risk assessor. Identify hazards, failure modes, and mitigations from the text."
+    provider: "gemini"
+  - id: "agent_3"
+    name: "Testing Reviewer"
+    description: "Reviews bench, animal, and clinical testing summaries."
+    model: "gemini-2.5-flash"
+    max_tokens: 8000
+    temperature: 0.2
+    system_prompt: "You are a testing reviewer. Summarize the testing methods, results, and conclusions."
+    provider: "gemini"
